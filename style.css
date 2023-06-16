@@ -266,7 +266,7 @@ ul {
 
   .left p {
     line-height: 1.6em;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .hero-text {
@@ -583,6 +583,10 @@ p {
   .hotel-list li p {
     display: none;
   }
+
+  .hotel-list {
+    padding: 4px;
+  }
 }
 
 /* TESTIMONIALS STYLING  */
@@ -704,6 +708,18 @@ footer {
 @media (max-width: 800px) {
   footer {
     flex-direction: column;
+  }
+
+  form {
+    padding: 0;
+  }
+
+  .col-left-contact {
+    padding: 0;
+  }
+
+  .footer-socials {
+    margin-left: 0;
   }
 }
 
