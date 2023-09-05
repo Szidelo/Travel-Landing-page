@@ -29,6 +29,7 @@ body::-webkit-scrollbar {
   --color-text-light: #bdc5ce;
 
   --transition: all 0.4s ease;
+  --max-width: 1440px;
 }
 
 /************** HEADER ******************/
@@ -49,9 +50,21 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+#nav-links {
+  transform: translateX(0);
+}
+
+.mx-width {
+  max-width: var(--max-width);
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   height: 90px;
   background-color: transparent;
@@ -253,6 +266,10 @@ ul {
     width: 50%;
     transition: var(--transition);
     z-index: 20;
+  }
+
+  nav {
+    justify-content: space-between;
   }
 
   nav ul li {
